@@ -40,9 +40,10 @@ Developed By: Divadharshini.A
 Register Number: 212222240027
 
 
-```python
 
-### i)Image Translation
+
+i)Image Translation
+```python
 
 import numpy as np
 import cv2
@@ -60,9 +61,12 @@ plt.axis('off')
 plt.imshow(translated_image)
 plt.show()
 
+```
 
 
-### ii) Image Scaling
+
+ii) Image Scaling
+```python
 
 import numpy as np
 import cv2
@@ -79,10 +83,11 @@ M = np.float32([[1.5, 0, 0],[0, 1.8, 0],[0, 0, 1]])
 scaled_img=cv2.warpPerspective (input_image, M, (cols*2, rows*2))
 plt.imshow(scaled_img)
 plt.show()
+```
 
 
-### iii)Image shearing
-
+iii)Image shearing
+```python
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -103,11 +108,12 @@ plt.show()
 
 plt.imshow(sheared_img_yaxis)
 plt.show()
+```
 
 
 
-### iv)Image Reflection
-
+iv)Image Reflection
+```python
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -129,9 +135,11 @@ plt.show()
 
 plt.imshow(reflected_img_yaxis)
 plt.show()
+```
 
 
-### v)Image Rotation
+v)Image Rotation
+```python
 
 import numpy as np
 import cv2
@@ -148,10 +156,11 @@ rotated_img = cv2.warpPerspective(input_image,M,(int(cols),int(rows)))
 
 plt.imshow(rotated_img)
 plt.show()
+```
 
-``
-### vi)Image Cropping
 
+vi)Image Cropping
+```python
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
